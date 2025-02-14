@@ -66,6 +66,24 @@ public class GirisSayfası implements ActionListener {
                         "Lütfen tüm alanları doldurun!",
                         "Hata",
                         JOptionPane.ERROR_MESSAGE);
+            }else if(sifre.length() < 5){
+                JOptionPane.showMessageDialog(
+                        null,
+                        "Minumum 5 karakter olmalı!",
+                        "Hata",
+                        JOptionPane.ERROR_MESSAGE);
+            }else if(kullaniciAdi.equals("Bedirhan") && sifre.equals("12345")) {
+                JOptionPane.showMessageDialog(
+                        null,
+                        "Giriş Başarılı!",
+                        "Başarılı",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }else{
+                JOptionPane.showMessageDialog(
+                        null,
+                        "Kullanıcı adı veya şifre hatalı!",
+                        "Hata",
+                        JOptionPane.ERROR_MESSAGE);
             }
         }
     }
